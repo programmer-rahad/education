@@ -1,0 +1,201 @@
+#main-content-section {
+  .main-content {
+    .banner-marquee {
+      img {
+      }
+      h3 {
+        background: #e6e7e8;
+        font-size: 22px;
+        color: #181818;
+        display: flex;
+        align-items: center;
+        padding: 10px 0 6px 0;
+        marquee {
+        }
+      }
+    }
+    .notice-board {
+      position: relative;
+      padding: 20px 0 60px 120px;
+      border: 1px solid #ddd;
+      background: url(../images/notice-board-bg1.png) no-repeat scroll top left,
+        linear-gradient(to bottom, #fff, #ebebeb);
+      @media (max-width: 767px) {
+        padding: 20px 15px 60px 15px;
+      }
+      h3 {
+        font-size: 21px;
+        color: #181818;
+      }
+      ul {
+        padding-left: 20px;
+        li {
+          background-image: url(../images/bullet_tick.png);
+          background-repeat: no-repeat;
+          padding-left: 20px;
+          background-position: 0px 9px;
+          a {
+            padding: 5px 0;
+            border-bottom: 1px dotted #333;
+            color: #000;
+            &:hover {
+              border-bottom-style: solid;
+            }
+          }
+        }
+      }
+      a.all-btn {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+      }
+    }
+    .notice-board-news {
+      position: relative;
+      margin-top: 20px;
+      padding: 15px;
+      background: #efefef;
+      border: 1px solid #ddd;
+      h4 {
+        margin-bottom: 0;
+        font-size: 13px;
+        font-weight: 700;
+        margin-right: 5px;
+      }
+      .notice-slide-news {
+        .news-items {
+          padding-top: 2px;
+          height: 24px;
+          overflow: hidden;
+          .news-item {
+            width: 100%;
+            transition: 1s;
+            a {
+              color: #666;
+            }
+          }
+        }
+      }
+      a.all-btn {
+        position: absolute;
+        right: 10px;
+      }
+    }
+    .main-content-boxes {
+      img {
+        width: auto;
+        max-width: 110px;
+      }
+      .row {
+        [class*="col-"] {
+          margin-top: 15px;
+          margin-bottom: 15px;
+        }
+      }
+      .main-content-box {
+        background: #f5f5f5;
+        border: 4px solid #cdcdcd;
+        padding: 15px;
+        height: 100%;
+        h3 {
+          color: #181818;
+          font-size: 21px;
+          font-weight: 400;
+        }
+        .box-content {
+          img {
+            margin-right: 10px;
+          }
+          ul {
+            li {
+              a {
+                color: #000;
+                border-bottom: 1px dotted transparent;
+                &:hover {
+                  border-bottom-color: #000;
+                }
+                padding: 4px 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .sidebar {
+    @media (min-width: 768px) and (max-width: 991px) {
+      width: 50%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+    }
+    @media (max-width: 991px) {
+      margin-top: 40px;
+    }
+    img {
+      width: auto;
+    }
+    audio,
+    iframe {
+      width: 100%;
+      border: 0;
+    }
+    h2.sanowar {
+      font-size: 20px;
+      margin: 12px 0;
+    }
+    .name-title-diff {
+      background: url(../images/name-title-diff.png) round;
+      padding: 15px;
+      a {
+        font-weight: 700;
+        color: #fff;
+      }
+    }
+    .sidebar-list {
+      padding: 15px 0;
+      ul {
+        li {
+          a {
+            color: #666;
+            padding: 5px 0;
+            border-bottom: 1px solid transparent;
+            border-image: linear-gradient(to right, #683091 0%, #8bc643 100%);
+            border-image-slice: 1;
+            display: block;
+            &:hover {
+              text-decoration: underline;
+            }
+            img {
+              margin-right: 5px;
+              width: auto;
+            }
+          }
+        }
+      }
+    }
+    .title-img {
+      margin: 15px 0;
+    }
+    .map {
+    }
+    .social-media-links {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      .social-media {
+        padding-bottom: 10px;
+        .name-title {
+          margin-bottom: 10px;
+        }
+        text-align: center;
+        a {
+          font-size: 30px;
+          margin: 0 10px;
+        }
+      }
+    }
+    .youtube-video {
+      margin: 15px 0;
+    }
+  }
+}
