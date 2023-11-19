@@ -1,0 +1,46 @@
+#footer-section {
+  .footer-top {
+    height: 84px;
+    background: url('../images/footer_top_bg.png');
+    margin-top: 30px;
+  }
+  .footer-main {
+    background: #ebebeb;
+    padding: 20px 15px;
+    img {
+      width: auto;
+    }
+    .footer-menu {
+        margin-bottom: 5px;
+      & + p {
+        color: #444;
+      }
+      li {
+        a {
+          color: #000;
+          font-size: 15px;
+          padding: 7px 12px;
+          border-right: 1px dotted #000;
+        }
+      }
+    }
+    .footer-right-para {
+      @media(min-width: 768px) {
+        text-align: right;
+      }
+      @media(max-width: 767px) {
+        margin-top: 30px;
+      }
+      color: #444;
+      a {
+        color: #444;
+      }
+    }
+    .technical-help {
+        margin-top: 5px;
+      p {
+        margin-right: 5px;
+      }
+    }
+  }
+}
